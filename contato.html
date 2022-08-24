@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Henrique Santana - Bulma</title>
+
+		<!-- Bulma link -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+		<link rel="shortcut icon" href="./laptop-aberto.png" type="image/x-icon">
+
+		<!-- deixar o menu do lado esquerdo -->
+		<style type="text/css">
+
+			::selection{
+				background-color: #808080;
+				color: #fff;
+			}
+
+			.navbar-menu {
+			    flex-grow: 0;
+			    flex-shrink: 0;
+			}
+
+			.card-rick{
+				height: 50%;
+				width: 310px;
+			}
+
+			#rick-info{
+				display: flex;
+			}
+
+			#rick-curriculo{
+				display: flex;
+				flex-direction: column;
+				width: 77%;
+				align-items: center;
+			}
+
+			.sobre-mim{
+				width: 90%;
+				margin-left: 20px;
+				margin-bottom: 20px;
+			}
+
+			.card-title{
+				font-size: 20px;
+			}
+
+			.div-cargo-content{
+				display: flex;
+			}
+
+			.cargo{
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				margin: 10px 30px;
+			}
+
+			.div-formacao-title h2{
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+			#ocupacao{
+				background-color: #242424;
+				color: #fff;
+				text-align: center;
+				padding: 5px;
+				border-radius: 5px;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<!-- Menu de navegação -->
+		<header>
+			<!-- Menu de navegação -->
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+			  <div class="navbar-brand">
+			    <a class="navbar-item" href="./index.html">
+			      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+			    </a>
+
+			    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+			      <span aria-hidden="true"></span>
+			      <span aria-hidden="true"></span>
+			      <span aria-hidden="true"></span>
+			    </a>
+			  </div>
+
+			  <div id="navbarBasicExample" class="navbar-menu">
+			    <div class="navbar-start">
+			      <a class="navbar-item" href="./index.html">
+			        Inicio
+			      </a>
+
+			      <a class="navbar-item" href="./contato.html">
+			        Contato
+			      </a>
+			    </div>
+			  </div>
+			</nav>
+		</header>
+
+
+
+		<section class="section">
+			
+			<div id="rick-info">
+			<!-- Card Rick -->
+				<div class="card card-rick">
+				  <div class="card-image">
+				    <figure class="image ">
+				      <img src="https://avatars.githubusercontent.com/u/48352650?v=4" alt="Henrique Santana">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				    <div class="media">
+				      <div class="media-left">
+				        <figure class="image is-48x48">
+				          <a href="https://github.com/rick-silva" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="Icone do github"></a>
+				        </figure>
+				      </div>
+				      <div class="media-content">
+				        <p class="title is-4">Henrique Santana</p>
+				        <p class="subtitle is-6">@rick-silva</p>
+				      </div>
+				    </div>
+
+				    <div class="content">
+				    	<div id="ocupacao">
+							<p>Estudando desenvolvimento WEB</p>
+				    	</div>
+				      	<br>
+				      	<p>Telefone: (11) 95122-7901</p>
+				      	<p>E-mail: rick.silva18@outlook.com</p>
+				    </div>
+				  </div>
+				</div>
+
+				<div id="rick-curriculo">
+					<!-- Descrição Rick -->
+					<div class="card sobre-mim">
+						<header class="card-header">
+					    	<h2 class="card-header-title card-title">
+					      		Sobre Mim
+					    	</h2>
+						</header>
+						<div class="card-content">
+					    	<div class="content">
+
+						    	<!-- E-mail -->
+								<div class="field">
+								  <label class="label">Email</label>
+								  <div class="control has-icons-left has-icons-right">
+								    <input class="input" type="email" placeholder="Digite um endereço de e-mail">
+								    <span class="icon is-small is-left">
+								      <i class="fas fa-envelope"></i>
+								    </span>
+								  </div>
+								</div>
+
+								<div class="field">
+								  <label class="label">Mensagem</label>
+								  <div class="control">
+								    <textarea class="textarea" placeholder="Encreva a sua mensagem aqui."></textarea>
+								  </div>
+								</div>
+
+
+								<div class="field is-grouped">
+								  <div class="control">
+								    <button class="button is-primary">Enviar</button>
+								  </div>
+								</div>
+
+					    	</div> <!-- fim content -->
+						</div> <!-- fim card-content -->
+					</div>
+
+				</div> <!-- rick-content -->
+			</div>
+
+
+
+		</section>
+
+	</body>
+</html>
